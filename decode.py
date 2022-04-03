@@ -22,11 +22,11 @@ with open('targets/' + targetFile, 'r') as file:
 
 rsa = rsaFile(targetStr)
 print("Current File : <" + targetFile + ">")
-d = Decoder(rsa, fileInfos=False, timeInfos=1)
+d = Decoder(rsa, fileInfos=1, timeInfos=1)
 
 # exit(0)
 
-if d.Pollard_rho_Decoder():
+if d.Pollard_p_1_Decoder():
   d.pq_decode()
   
   with open("decoded/" + targetFile + '.txt', 'w') as file:
