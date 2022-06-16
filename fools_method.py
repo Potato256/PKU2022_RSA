@@ -1,3 +1,5 @@
+# We guess a m and try to validate
+
 from distutils.log import info
 from decoder import Decoder
 from gmpy2 import iroot, mpz, divm, powmod

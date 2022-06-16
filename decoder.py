@@ -1,4 +1,3 @@
-from zmq import NULL
 import time
 from gmpy2 import iroot, mpz, divm, powmod, gcd, t_div, div
 from gmpy2 import mpz_random, t_mod
@@ -58,7 +57,7 @@ class Decoder():
   def m_decode(self):
     '''We already know n,e,c,m and we want p,q,d'''
     '''------------That's impossible------------'''
-    return NULL
+    pass
 
   def Naive_Decoder(self):
     '''It's useless'''
@@ -119,15 +118,6 @@ class Decoder():
     print("Success!")
     print(f"m = {res[0]}")
     self.m = res[0]
-
-  def E3_Low_Encryption_Decoder(self):
-    return NULL
-
-  def E5_Low_Encryption_Decoder(self):
-    return NULL
-
-  def Wiener_Decoder(self):
-    return NULL
 
   def Pollard_rho_Decoder(self):
     def f(x, a):

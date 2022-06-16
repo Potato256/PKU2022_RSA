@@ -24,7 +24,6 @@ rsa = rsaFile(targetStr)
 print("Current File : <" + targetFile + ">")
 d = Decoder(rsa, fileInfos=1, timeInfos=1)
 
-# exit(0)
 
 if d.Pollard_p_1_Decoder():
   d.pq_decode()
